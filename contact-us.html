@@ -25,34 +25,28 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/loans.html">Loans</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/Apply.html" style="/*color: #edf3f9;*/">apply</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Apply.html" style="/*color: #edf3f9;*/">apply</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/about-us.html" style="/*color: #edf3f9;*/">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact-us.html" style="/*color: #edf3f9;*/">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/contact-us.html" style="/*color: #edf3f9;*/">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="page contact-us-page">
-        <section class="clean-block clean-form dark" style="margin-top: 1.5px;">
+        <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info"><strong>Your</strong>&nbsp;<strong>finance</strong></h2>
-                    <p>Please complete the application form so that&nbsp;<br>we can find a loan that’s right for your business.<br></p>
-                </div><div class="cognito">
-<script src="https://www.cognitoforms.com/s/PSkqx62bxkml4Fa3MnulSA"></script>
-<script>Cognito.load("forms", { id: "9" });</script>
-</div>
-
-            <!-- script for APPPLY PAGE -->
-            <script type="text/javascript"> 
-                function Apply_page onload(){
-                    if  ( varAmount == 0 ){
-                        Cognito.load("forms", { id: "9" });
-                    } else {
-                        Cognito.load("forms", { id: "9", entry: { "BasicInformation":{ "AmountToBorrow": varAmount, "DepositAmount": varDeposit, "HowLong": varMonths, "CreditRate": selected_rate } } });
-                    }
-                }
-            </script></div>
+                    <h2 class="text-info"><strong>Get in touch</strong></h2>
+                    <p>We’re here to help you find the right loan for your business.<br>If you have any questions or worries, please get in touch.</p>
+                </div>
+                <form>
+                    <div class="form-group"><label>Name</label><input class="form-control" type="text"></div>
+                    <div class="form-group"><label>Subject</label><input class="form-control" type="text"></div>
+                    <div class="form-group"><label>Email</label><input class="form-control" type="email"></div>
+                    <div class="form-group"><label>Message</label><textarea class="form-control"></textarea></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Send</button></div>
+                </form>
+            </div>
         </section>
     </main>
     <section class="py-5" style="background-color: #ffffff;">
